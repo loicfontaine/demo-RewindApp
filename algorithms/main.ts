@@ -76,7 +76,6 @@ export async function getSuggestions(
   suggestionStore.proposals.length = 0;
   suggestionStore.fetch(start, end);
 
-  console.log(suggestionStore.proposals);
   watch(
     suggestionStore.suggestions,
     () => {
