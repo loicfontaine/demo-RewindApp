@@ -93,7 +93,7 @@ export async function getUserMostRecentActivity() {
   const allUserActivities = ref([] as any[]);
   const aMonthAgo = new Date();
   aMonthAgo.setMonth(aMonthAgo.getMonth() - 1);
-  const url = `${BASE_URL}/timesheets?start_date=${formatDate(
+  const url = `${BASE_URL}/timesheets?users=494&start_date=${formatDate(
     aMonthAgo
   )}&token=${config.public.zebraApiKey}`;
   try {
